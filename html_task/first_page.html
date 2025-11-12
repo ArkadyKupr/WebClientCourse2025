@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Первая страница</title>
+</head>
+<body>
+
+<!-- 1) # текстовые поля ввода, многострочные поля ввода, чекбоксы,
+# радио-баттоны, выпадающие списки с единственным и множественным выбором, кнопка
+# ссылка на страницу 2
+
+#2) сделать страницу, в которой есть: картинки, таблица с colspan и rowspan,
+# абзацы, заголовки, ссылки (пусть одна из них ведет на страницу с формой из п.1),
+# горизонтальные линии и переводы строки и что еще угодно -->
+
+<p><b>Водорастворимые полимеры</b></p>
+<br>
+
+<p><b>Поле ввода</b></p>
+<input type="text"  placeholder="Название полимера">
+<br>
+
+<p><b>Кнопка</b></p>
+<button>Перейти</button>
+<br>
+
+<p><b>Радио-баттон</b></p>
+ <label><input type="radio" value="1" name="myRadio">Карбоксиметилцеллюлоза</label>
+ <label><input type="radio" value="2" name="myRadio">Полиметилматакрилат натрия</label>
+ <label><input type="radio" value="3" name="myRadio">Поливиниловый спирт</label>
+
+
+<p><b>Какие водорастворимые полимеры вам необходимы?</b></p>
+<p><input type="checkbox" name="myCheckbox" value="1">Карбоксиметилцеллюлоза</p>
+<p><input type="checkbox" name="myCheckbox" value="2" checked>Полиметилматакрилат натрия</p>
+<p><input type="checkbox" name="myCheckbox" value="3" checked>Поливиниловый спирт</p>
+<p><input type="checkbox" name="myCheckbox" value="4">Полиамид</p>
+<p><input type="checkbox" name="myCheckbox" value="5">Альгинат натрия</p>
+<p><input type="submit" value="Отправить"></p>
+<br>
+
+<p><b>Многострочное поле ввода</b></p>
+<p><b>Введите список необходимых водорастворимых полимеров:</b></p>
+<p><textarea rows="10" cols="45" name="text"></textarea></p>
+<p><input type="submit" value="Отправить"></p>
+
+<p><b>Выпадающий список с единственным выбором</b></p>
+<select name="polymers">
+ <option value="1">Карбоксиметилцеллюлоза</option>
+ <option value="2">Полиметилматакрилат натрия</option>
+ <option value="3">Поливиниловый спирт</option>
+ </select>
+<br>
+<br>
+<br>
+
+<p><b>Список с множественным выбором</b></p>
+<select name="polymers" multiple>
+ <option value="1">Карбоксиметилцеллюлоза</option>
+ <option value="2" selected>Полиметилматакрилат натрия</option>
+ <option value="3">Поливиниловый спирт</option>
+ </select>
+
+<p><b>Ссылка на вторую страницу</b></p>
+<a target="_blank" href="http://localhost:63342/WebClientCourse/html_task/second_page.html?_ijt=u1sp0fgnfst2pkauiqhpustqmc&_ij_reload=RELOAD_ON_SAVE">Вторая страница</a>
+
+</body>
+</html>
