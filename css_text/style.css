@@ -1,0 +1,44 @@
+p.page-header{
+    color:#6f685e;
+    font-size: 60px;
+    line-height: 0.9;
+    margin-top: 30px;
+}
+p.page-content{
+    font-size: 33px;
+    color:#696b61;
+    text-indent: 40px;
+    text-align: justify;
+}
+span.blue-string{
+    color:#3f8ba3;
+    font-size: 33px;
+    font-weight: bold;
+}
+span.line-through{
+    text-indent: 10px;
+    font-size: 33px;
+    color:#696b61;
+    text-decoration: line-through;
+}
+span{
+    font-size: 33px;
+    color:#696b61;
+}
+.page-header{
+    font-size: 33px;
+    color:#696b61;
+}
+div{
+    box-sizing: border-box;
+    padding: 0%;
+    padding-left: 20px;
+    background-color: #feeed5;
+    font-family: "Calibri", sans-serif;
+    line-height: 1;
+    overflow: hidden scroll;
+}
+.header{
+    font-size: 10px;
+    font-weight: bold;
+}
