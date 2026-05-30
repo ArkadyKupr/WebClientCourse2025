@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Первая страница</title>
 </head>
 <body>
-
 <!-- 1) # текстовые поля ввода, многострочные поля ввода, чекбоксы,
 # радио-баттоны, выпадающие списки с единственным и множественным выбором, кнопка
 # ссылка на страницу 2
@@ -18,7 +17,8 @@
 <br>
 
 <p><b>Поле ввода</b></p>
-<input type="text" placeholder="Название полимера">
+<label for="polymer_name">Название полимера:</label>
+<input type="text" id="polymer_name">
 <br>
 
 <p><b>Кнопка</b></p>
@@ -30,12 +30,26 @@
 <label><input type="radio" value="2" name="myRadio">Полиметилматакрилат натрия</label>
 <label><input type="radio" value="3" name="myRadio">Поливиниловый спирт</label>
 
+<p><b>Водорастворимые полимеры:</b></p>
+<ul>
+    <li>Карбоксиметилцеллюлоза</li>
+    <li>Полиметилметакрилат натрия</li>
+    <li>Поливиниловый спирт</li>
+    <li>Полиамид</li>
+    <li>Альгинат натрия</li>
+</ul>
+
 <p><b>Какие водорастворимые полимеры вам необходимы?</b></p>
-<p><input type="checkbox" name="myCheckbox" value="1">Карбоксиметилцеллюлоза</p>
-<p><input type="checkbox" name="myCheckbox" value="2" checked>Полиметилматакрилат натрия</p>
-<p><input type="checkbox" name="myCheckbox" value="3" checked>Поливиниловый спирт</p>
-<p><input type="checkbox" name="myCheckbox" value="4">Полиамид</p>
-<p><input type="checkbox" name="myCheckbox" value="5">Альгинат натрия</p>
+<p><input type="checkbox" id="first_polymer" name="myCheckbox" value="1" checked>
+    <label for="first_polymer">Карбоксиметилцеллюлоза</label></p>
+<p><input type="checkbox" id="second_polymer" name="myCheckbox" value="2">
+    <label for="second_polymer">Полиметилметакрилат натрия</label></p>
+<p><input type="checkbox" id="third_polymer" name="myCheckbox" value="3">
+    <label for="third_polymer">Поливиниловый спирт</label></p>
+<p><input type="checkbox" id="forth_polymer" name="myCheckbox" value="4">
+    <label for="forth_polymer">Полиамид</label></p>
+<p><input type="checkbox" id="fifth_polymer" name="myCheckbox" value="5">
+    <label for="fifth_polymer">Альгинат натрия</label></p>
 <p><input type="submit" value="Отправить"></p>
 <br>
 
@@ -63,8 +77,7 @@
 
 <p><b>Ссылка на вторую страницу</b></p>
 <a target="_blank"
-   href="http://localhost:63342/WebClientCourse/html_task/second_page.html?_ijt=u1sp0fgnfst2pkauiqhpustqmc&_ij_reload=RELOAD_ON_SAVE">Вторая
+   href=".\second_page.html">Вторая
     страница</a>
-
 </body>
 </html>
