@@ -1,23 +1,40 @@
 <!DOCTYPE html>
- <html>
- <head>
+<html>
+<head>
     <meta charset="UTF-8">
-    <title>css form task</title>
+    <title>css</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
- </head>
- <body >
-   <div class="title">Отправить заявку</div>
-   <div class="content">
-      <p class="first">Ваше имя</p>
-      <input type="text" value="Ваше имя *">
-      <p>Ваш номер телефона</p>
-      <input type="text" value="Ваш номер телефона *">
-      <p>Ваш email или VK</p>
-      <input type="text" value="Ваш email или VK *">
-      <p>Комментарий</p>
-      <textarea rows="10" cols="45" name="text">Комментарий (не обязательно)</textarea>
-      <p class="content-content">Заполните и отправьте форму, и мы перезвоним Вам по указанному номеру</p>
-      <p><input type="submit" value="Отправить заявку"></p>
-   </div>
+</head>
+<body>
+<p class="title">Отправить заявку</p>
+<form action="/handler.php" method="post">
+    <div class="content">
+        <label for="your-name" class="form">Ваше имя</label>
+        <input class="text" id="your-name" placeholder="Ваше имя *" name="name">
+    </div>
+
+    <div class="content">
+        <label for="your-telephone-number" class="form">Ваш номер телефона</label>
+        <input class="text" id="your-telephone-number" placeholder="Ваш номер телефона *" name="phone-number">
+    </div>
+
+    <div class="content">
+        <label for="your-email-or-vk" class="form">Ваш email или VK</label>
+        <input class="text" id="your-email-or-vk" placeholder="Ваш email или VK *" name="email-or-vk">
+    </div>
+
+    <div class="content">
+        <label for="comment" class="form">Комментарий</label>
+        <textarea class="textarea" id="comment" rows="10" cols="45" placeholder="Комментарий (не обязательно)"
+                  name="comment"></textarea>
+    </div>
+
+    <div class="last-content">
+        <label for="sending-form" class="lable-of-button">Заполните и отправьте форму, и мы перезвоним Вам по указанному
+            номеру<br></label>
+        <button type="submit" id="sending-form" class="submit">Отправить заявку</button>
+    </div>
+</form>
 </body>
 </html>
